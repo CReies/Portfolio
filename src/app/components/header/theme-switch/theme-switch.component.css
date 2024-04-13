@@ -1,0 +1,20 @@
+.theme-switch__element {
+	width: 1.4rem;
+	stroke: var(--color-scheme-1);
+}
+.theme-switch__element--disabled {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.theme-switch {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		padding: 1rem;
+	}
+
+	.theme-switch--disabled {
+		display: none;
+	}
+}

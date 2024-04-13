@@ -1,0 +1,15 @@
+.responsive-menu__item {
+	display: none;
+	fill: var(--color-scheme-1);
+	width: 1.4rem;
+}
+
+.responsive-menu__item--disabled {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.responsive-menu__item {
+		display: flex;
+	}
+}
