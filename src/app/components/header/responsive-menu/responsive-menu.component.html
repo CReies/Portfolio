@@ -1,4 +1,4 @@
 <div class="responsive-menu">
-	<app-svg name="MenuOpen" class="responsive-menu__item" id="responsiveMenuOpen" />
-	<app-svg name="MenuClose" class="responsive-menu__item responsive-menu__item--disabled" id="responsiveMenuClose" />
+	<app-svg name="{{closeMenuDisabled ? 'MenuOpen' : 'MenuClose'}}" class="responsive-menu__item" id="responsiveMenuOpen"
+		(click)="openMenu()" />
 </div>
