@@ -1,0 +1,12 @@
+<footer class="footer">
+	<div class="footer__container">
+		<span class="footer__copyright">&copy; 2024 Cristian Reyes</span>
+		<menu>
+			<ul class="footer__social">
+				@for (socialLink of socialLinks; track $index) {
+				<app-social-link [socialLink]="socialLink" />
+				}
+			</ul>
+		</menu>
+	</div>
+</footer>
