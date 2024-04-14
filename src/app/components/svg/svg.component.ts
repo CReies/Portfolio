@@ -4,6 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
 	selector: 'app-svg',
+	standalone: true,
 	templateUrl: './svg.component.html',
 	styleUrl: './svg.component.css',
 })
