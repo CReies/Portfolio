@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @Component({
 	selector: 'app-root',
@@ -14,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 		HomeComponent,
 		ProjectsComponent,
 		HttpClientModule,
+		SkillsComponent,
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.css',
