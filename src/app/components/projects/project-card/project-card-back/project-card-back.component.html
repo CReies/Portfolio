@@ -1,0 +1,11 @@
+<section class="projects__card--back">
+	<h3 class="projects__card-title">Technologies:</h3>
+	<div class="projects__technologies">
+		@for (technology of projectCardBackData.technologies; track $index) {
+		<div class="projects__technology">
+			<app-svg [name]="technology.name" />
+		</div>
+		}
+	</div>
+	<a href={{projectCardBackData.repoLink}} class="projects__repo" target="_blank">Repo</a>
+</section>

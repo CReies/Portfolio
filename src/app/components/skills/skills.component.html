@@ -1,0 +1,23 @@
+<section id="skillsSection" class="skills">
+	<h2 class="skills__title">Skills</h2>
+	<div class="skills__container">
+		<article class="skills__category">
+			<h3 class="skills__category-title">
+				Professional <span>SkillSet</span>
+			</h3>
+			<div class="skills__cards">
+				@for (skill of skills; track $index) {
+				<app-skill-card [skill]="skill" />
+				}
+			</div>
+		</article>
+		<article>
+			<h3 class="skills__category-title"><span>Tools</span> I Use</h3>
+			<div class="skills__cards">
+				@for (tool of tools; track $index) {
+				<app-skill-card [skill]="tool" />
+				}
+			</div>
+		</article>
+	</div>
+</section>

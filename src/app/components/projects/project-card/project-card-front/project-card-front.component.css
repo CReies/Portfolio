@@ -1,0 +1,18 @@
+.projects__card-header {
+	margin-bottom: 3rem;
+}
+
+.projects__card-header img {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+
+.projects__card-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.projects__card-title span {
+	color: var(--primary-color);
+}

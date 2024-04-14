@@ -1,0 +1,8 @@
+<section id="projectsSection" class="projects">
+	<h2 class="projects__title"><span>My</span> Projects</h2>
+	<div class="projects__cards">
+		@for (project of projects; track project.id) {
+		<app-project-card [projectData]="project" />
+		}
+	</div>
+</section>
