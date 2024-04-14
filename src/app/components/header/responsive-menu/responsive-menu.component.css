@@ -1,15 +1,15 @@
-.responsive-menu__item {
+::ng-deep .responsive-menu__item svg {
 	display: none;
 	fill: var(--color-scheme-1);
 	width: 1.4rem;
 }
 
-.responsive-menu__item--disabled {
+::ng-deep .responsive-menu__item--disabled svg {
 	display: none !important;
 }
 
 @media (max-width: 768px) {
-	.responsive-menu__item {
+	::ng-deep .responsive-menu__item svg {
 		display: flex;
 	}
 }
