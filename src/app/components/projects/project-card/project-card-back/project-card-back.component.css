@@ -10,7 +10,7 @@
 	margin: 1rem;
 }
 
-.projects__technology svg {
+::ng-deep .projects__technology svg {
 	fill: var(--secondary-color) !important;
 	width: 5rem;
 	height: 5rem;
