@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ISocialLink } from '../../../Interfaces/ISocialLink';
+import { SocialLinkComponent } from './social-link/social-link.component';
 
 @Component({
 	selector: 'app-footer',
 	standalone: true,
-	imports: [],
+	imports: [SocialLinkComponent],
 	templateUrl: './footer.component.html',
 	styleUrl: './footer.component.css',
 })
