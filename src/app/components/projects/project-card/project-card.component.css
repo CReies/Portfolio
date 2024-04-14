@@ -1,11 +1,11 @@
-app-front,
-app-back {
+app-project-card-front,
+app-project-card-back {
 	grid-area: 1/1;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-app-back {
+app-project-card-back {
 	transform: rotateY(180deg);
 }
 
