@@ -11,7 +11,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
 })
 export class SkillsComponent {
 	skills: ITechnology[] = [
-		{ name: 'Typescript' },
+		{ name: 'TypeScript' },
 		{ name: 'Vue' },
 		{ name: 'React' },
 		{ name: 'Redux' },
