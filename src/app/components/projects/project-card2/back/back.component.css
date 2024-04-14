@@ -1,0 +1,27 @@
+.projects__technologies {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects__technology {
+	margin: 1rem;
+}
+
+.projects__technology svg {
+	fill: var(--secondary-color) !important;
+	width: 5rem;
+	height: 5rem;
+}
+
+.projects__repo {
+	padding-block: 0.7rem;
+	display: block;
+	background-color: var(--secondary-color);
+	border-radius: 8px;
+	color: var(--color-scheme-2);
+	text-decoration: none;
+	font-size: 1.5rem;
+}
