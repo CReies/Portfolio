@@ -1,0 +1,13 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	max-width: 69rem;
+	margin-inline: auto;
+	margin-top: 6.9rem;
+}
+
+@media (max-width: 768px) {
+	.main {
+		margin-inline: 1rem;
+	}
+}
