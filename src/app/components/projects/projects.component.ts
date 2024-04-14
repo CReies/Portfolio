@@ -42,16 +42,16 @@ export class ProjectsComponent {
 		},
 		{
 			id: 2,
-			title: 'Simple *Crud*',
+			title: 'ToDo *App*',
 			image:
-				'https://opengraph.githubassets.com/53185f37b9432bb6689f7fffd2a1bb95e7d1428fc486d2da211a8cef761a1dce/CReies/Simple-CRUD',
+				'https://opengraph.githubassets.com/f9897e726fadadfcac13add264677523de6e796584373c92080b48671c7b16ba/CReies/TodoList',
 			repoLink: 'https://github.com/CReies/Simple-CRUD',
 			description:
-				'This is a simple CRUD, the frontend is very basic with vanilla js, the backend is made with SpringBoot and the database is MySQL.',
+				'This is a web page that consumes my ToDo API, developed on React with Typescript, and using also Redux',
 			technologies: [
-				{ name: 'Java' },
-				{ name: 'SpringBoot' },
-				{ name: 'MySQL' },
+				{ name: 'TypeScript' },
+				{ name: 'React' },
+				{ name: 'Redux' },
 			],
 		},
 	];
