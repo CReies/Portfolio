@@ -4,10 +4,6 @@
 	width: 1.4rem;
 }
 
-::ng-deep .responsive-menu__item--disabled svg {
-	display: none !important;
-}
-
 @media (max-width: 768px) {
 	::ng-deep .responsive-menu__item svg {
 		display: flex;
