@@ -1,0 +1,97 @@
+.projects {
+	margin-block: 6.9rem;
+	scroll-margin-top: 5rem;
+}
+
+.projects__title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.projects__title span {
+	color: var(--primary-color);
+}
+
+.projects__cards {
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+}
+
+.projects__card {
+	min-width: 20rem;
+	max-width: 30rem;
+	min-height: 25rem;
+	flex: 1;
+	margin: 1.5rem;
+	padding: 2rem;
+	box-shadow: 0px 0px 10px var(--primary-color);
+	border-radius: 16px;
+	background-color: transparent;
+	background-color: var(--background-color);
+}
+
+
+
+.projects__card:hover .projects__card-inner {
+	transform: rotateY(180deg);
+}
+
+.projects__card--front,
+.projects__card--back {
+	grid-area: 1/1;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.projects__card--back {
+	transform: rotateY(180deg);
+}
+
+.projects__card-header {
+	margin-bottom: 3rem;
+}
+
+.projects__card-title {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.projects__card-title span {
+	color: var(--primary-color);
+}
+
+.projects__card img {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+}
+
+.projects__technologies {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects__technology {
+	margin: 1rem;
+}
+
+.projects__technology svg {
+	fill: var(--secondary-color) !important;
+	width: 5rem;
+	height: 5rem;
+}
+
+.projects__repo {
+	padding-block: 0.7rem;
+	display: block;
+	background-color: var(--secondary-color);
+	border-radius: 8px;
+	color: var(--color-scheme-2);
+	text-decoration: none;
+	font-size: 1.5rem;
+}
