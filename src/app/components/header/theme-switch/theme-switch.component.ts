@@ -8,4 +8,18 @@ import { SvgComponent } from '../../svg/svg.component';
 	templateUrl: './theme-switch.component.html',
 	styleUrl: './theme-switch.component.css',
 })
-export class ThemeSwitchComponent {}
+export class ThemeSwitchComponent {
+	lightThemeDisabled = true;
+
+	changeTheme = (): void => {
+		const body = document.querySelector('body');
+		const header = document.querySelector('.header');
+
+		body?.classList.toggle('light');
+		body?.classList.toggle('dark');
+		header?.classList.toggle('light');
+		header?.classList.toggle('dark');
+
+		this.lightThemeDisabled = !this.lightThemeDisabled;
+	};
+}
