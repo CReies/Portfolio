@@ -1,9 +1,22 @@
 .main {
+	background-color: var(--background-color);
+	background-image: url(/assets/images/svg/Background.svg);
+}
+
+.main__inner.light {
+	background-color: #ffffff97;
+}
+
+.main__inner.dark {
+	backdrop-filter: brightness(50%) !important;
+}
+
+.main__container {
 	display: flex;
 	flex-direction: column;
 	max-width: 69rem;
 	margin-inline: auto;
-	margin-top: 6.9rem;
+	padding-top: 6.9rem;
 }
 
 @media (max-width: 768px) {

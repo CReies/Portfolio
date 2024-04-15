@@ -31,7 +31,7 @@ body.light {
 
 	--color-scheme-1: #000;
 	--color-scheme-2: #dbfde7;
-	backdrop-filter: none;
+	backdrop-filter: brightness(150%) !important;
 }
 
 body.dark {
@@ -40,13 +40,12 @@ body.dark {
 
 	--color-scheme-1: #fff;
 	--color-scheme-2: #0b4f23;
-	backdrop-filter: brightness(50%);
+	backdrop-filter: brightness(50%) !important;
 }
 
 body {
 	background-color: var(--background-color);
 	min-height: 100vh;
-	background-image: url(../images/svg/Background.svg);
 }
 
 @media (prefers-color-scheme: light) {
