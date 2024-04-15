@@ -1,0 +1,35 @@
+.skills {
+	margin-block: 6.9rem;
+	scroll-margin-top: 5rem;
+}
+
+.skills__title {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.skills__category-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.skills__category-title span {
+	color: var(--primary-color);
+}
+
+.skills__cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-block: 3rem;
+}
+
+@media (max-width: 768px) {
+	.skills__cards {
+		gap: 2rem;
+	}
+}

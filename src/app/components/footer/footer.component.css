@@ -1,0 +1,26 @@
+.footer {
+	width: calc(100vw - 2rem);
+	margin-inline: auto;
+	border-top: 1px solid var(--primary-color);
+}
+
+.footer__container {
+	display: flex;
+	flex-direction: row;
+	max-width: 69rem;
+	margin-inline: auto;
+	justify-content: space-between;
+	padding-block: 3rem 2rem;
+}
+
+.footer__social {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		margin-inline: 1rem;
+	}
+}

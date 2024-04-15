@@ -1,0 +1,11 @@
+::ng-deep .responsive-menu__item svg {
+	display: none;
+	fill: var(--color-scheme-1);
+	width: 1.4rem;
+}
+
+@media (max-width: 768px) {
+	::ng-deep .responsive-menu__item svg {
+		display: flex;
+	}
+}

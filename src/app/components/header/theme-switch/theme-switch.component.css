@@ -1,0 +1,20 @@
+::ng-deep .theme-switch__element svg {
+	width: 1.4rem;
+	stroke: var(--color-scheme-1);
+}
+::ng-deep .theme-switch__element--disabled svg {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.theme-switch {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		padding: 1rem;
+	}
+
+	::ng-deep .theme-switch--disabled svg {
+		display: none;
+	}
+}
