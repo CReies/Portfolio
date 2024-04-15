@@ -4,14 +4,15 @@
 }
 
 .skills__title {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-bottom: 2rem;
 	text-align: center;
 }
 
 .skills__category-title {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .skills__category-title span {
