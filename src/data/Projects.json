@@ -1,0 +1,77 @@
+[
+	{
+		"id": 0,
+		"title": "Simple *Crud*",
+		"image": "https://opengraph.githubassets.com/53185f37b9432bb6689f7fffd2a1bb95e7d1428fc486d2da211a8cef761a1dce/CReies/Simple-CRUD",
+		"repoLink": "https://github.com/CReies/Simple-CRUD",
+		"description": "This is a simple CRUD, the frontend is very basic with vanilla js, the backend is made with SpringBoot and the database is MySQL.",
+		"technologies": [
+			{
+				"name": "Java"
+			},
+			{
+				"name": "SpringBoot"
+			},
+			{
+				"name": "MySQL"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "ToDo *API*",
+		"image": "https://opengraph.githubassets.com/77292d07699a441fc6e075126e653afe0f84f98454cb6e40b29681fe23530426/CReies/TodoAPI",
+		"repoLink": "https://github.com/CReies/TodoAPI",
+		"description": "This is an REST API for a ToDo app, developed on NodeJS using Typescript and mongoose to do the connection with the database on MongoDB",
+		"technologies": [
+			{
+				"name": "TypeScript"
+			},
+			{
+				"name": "NodeJS"
+			},
+			{
+				"name": "Express"
+			},
+			{
+				"name": "MongoDB"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "ToDo *App*",
+		"image": "https://opengraph.githubassets.com/f9897e726fadadfcac13add264677523de6e796584373c92080b48671c7b16ba/CReies/TodoList",
+		"repoLink": "https://github.com/CReies/Simple-CRUD",
+		"description": "This is a web page that consumes my ToDo API, developed on React with Typescript, and using also Redux",
+		"technologies": [
+			{
+				"name": "TypeScript"
+			},
+			{
+				"name": "React"
+			},
+			{
+				"name": "Redux"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "La Pinguinera *Quotes*",
+		"image": "https://opengraph.githubassets.com/55663d802f838cfefb6da65d31dc2b8fc760f0b3c911df0c190aa09d865865b0/CReies/La-Pinguinera-Hexagonal",
+		"repoLink": "https://github.com/CReies/La-Pinguinera-Hexagonal",
+		"description": "Quoting system for a library, builded with Hexagonal Architecture, Domain Driven Design, Event Sourcing and Reactive Programming for the Use Cases and Controllers. It was developed with .NET Core, C#, and MongoDB",
+		"technologies": [
+			{
+				"name": "CSharp"
+			},
+			{
+				"name": "DotNet"
+			},
+			{
+				"name": "MongoDB"
+			}
+		]
+	}
+]

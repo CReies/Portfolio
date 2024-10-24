@@ -10,8 +10,7 @@ app-project-card-back {
 }
 
 .projects__card {
-	min-width: 20rem;
-	max-width: 30rem;
+	max-width: 20rem;
 	min-height: 25rem;
 	flex: 1;
 	margin: 1.5rem;

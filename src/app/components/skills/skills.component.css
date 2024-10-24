@@ -1,6 +1,8 @@
 .skills {
 	margin-block: 6.9rem;
 	scroll-margin-top: 5rem;
+	max-width: 69rem;
+	margin-inline: auto;
 }
 
 .skills__title {
