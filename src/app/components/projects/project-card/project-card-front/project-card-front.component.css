@@ -1,5 +1,5 @@
 .projects__card-header {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .projects__card-header img {
@@ -15,4 +15,8 @@
 
 .projects__card-title span {
 	color: var(--primary-color);
+}
+
+.projects__card-main {
+	margin-bottom: 1rem;
 }

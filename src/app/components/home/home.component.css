@@ -1,4 +1,6 @@
 .home {
+	margin-inline: auto;
+	max-width: 69rem;
 	margin-block: 6.9rem;
 	scroll-margin-top: 5rem;
 }
