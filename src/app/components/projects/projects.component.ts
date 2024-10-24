@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IProject } from '../../../Interfaces/IProject';
 import { ProjectCardComponent } from './project-card/project-card.component';
-import projectsData from '../../../data/projects.json';
+import projectsData from '../../../data/Projects.json';
 
 @Component({
 	selector: 'app-projects',
