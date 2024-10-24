@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ITechnology } from '../../../Interfaces/ITechnology';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import skillsData from '../../../data/Skills.json';
+import toolsData from '../../../data/Tools.json';
 
 @Component({
 	selector: 'app-skills',
@@ -10,28 +12,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
 	styleUrl: './skills.component.css',
 })
 export class SkillsComponent {
-	skills: ITechnology[] = [
-		{ name: 'TypeScript' },
-		{ name: 'Vue' },
-		{ name: 'React' },
-		{ name: 'Redux' },
-		{ name: 'Angular' },
-		{ name: 'NodeJS' },
-		{ name: 'Express' },
-		{ name: 'Java' },
-		{ name: 'SpringBoot' },
-		{ name: 'CSharp' },
-		{ name: 'DotNet' },
-		{ name: 'MySQL' },
-		{ name: 'PostgresSQL' },
-		{ name: 'MongoDB' },
-	];
+	skills: ITechnology[] = skillsData as ITechnology[];
 
-	tools: ITechnology[] = [
-		{ name: 'VSCode' },
-		{ name: 'VS2022' },
-		{ name: 'Windows' },
-		{ name: 'Linux' },
-		{ name: 'Git' },
-	];
+	tools: ITechnology[] = toolsData as ITechnology[];
 }
