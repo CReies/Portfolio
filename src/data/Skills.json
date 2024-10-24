@@ -1,0 +1,44 @@
+[
+	{
+		"name": "TypeScript"
+	},
+	{
+		"name": "Vue"
+	},
+	{
+		"name": "React"
+	},
+	{
+		"name": "Redux"
+	},
+	{
+		"name": "Angular"
+	},
+	{
+		"name": "NodeJS"
+	},
+	{
+		"name": "Express"
+	},
+	{
+		"name": "Java"
+	},
+	{
+		"name": "SpringBoot"
+	},
+	{
+		"name": "CSharp"
+	},
+	{
+		"name": "DotNet"
+	},
+	{
+		"name": "MySQL"
+	},
+	{
+		"name": "PostgresSQL"
+	},
+	{
+		"name": "MongoDB"
+	}
+]
