@@ -49,7 +49,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # Lock files
 package-lock.json
 yarn.lock
-pnpm-lock.yaml
 
 # Runtime data
 pids
