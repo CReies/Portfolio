@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.angular/
+tmp/
+pnpm-lock.yaml
+docs/evidence/
+src/assets/documents/
+src/assets/images/social-preview.png
