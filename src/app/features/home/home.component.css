@@ -2,10 +2,46 @@
   display: block;
 }
 .home {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   max-width: 69rem;
   margin: 0 auto;
   padding-block: clamp(3rem, 7vw, 6rem) 4rem;
   animation: profile-enter 400ms ease-out;
+}
+.home__portrait {
+  display: block;
+  width: 12rem;
+  height: auto;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 0.375rem;
+  background: var(--surface);
+}
+@media (min-width: 48rem) {
+  .home {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    column-gap: clamp(2rem, 4vw, 3rem);
+    align-items: start;
+  }
+  .home > :not(.home__portrait) {
+    grid-column: 1;
+  }
+  .home__portrait {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .home .home__actions {
+    grid-column: 1 / -1;
+  }
+}
+@media (min-width: 64rem) {
+  .home {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+  }
 }
 .home__intro {
   color: var(--secondary-color);
