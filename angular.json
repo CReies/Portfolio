@@ -22,7 +22,13 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/assets", { "glob": "CNAME", "input": "src", "output": "/" }],
+            "assets": [
+              "src/assets",
+              { "glob": "CNAME", "input": "src", "output": "/" },
+              { "glob": "googlee1069f5a46646f8d.html", "input": ".", "output": "/" },
+              { "glob": "robots.txt", "input": "src", "output": "/" },
+              { "glob": "sitemap.xml", "input": "src", "output": "/" }
+            ],
             "styles": ["src/assets/css/main.css"],
             "scripts": []
           },
