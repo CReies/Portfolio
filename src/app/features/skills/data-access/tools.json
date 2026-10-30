@@ -1,0 +1,66 @@
+[
+  {
+    "title": "AI",
+    "items": [
+      {
+        "name": "Claude Code",
+        "icon": "ClaudeCode"
+      },
+      {
+        "name": "Codex",
+        "icon": "Codex"
+      },
+      {
+        "name": "GitHub Copilot",
+        "icon": "GitHubCopilot"
+      }
+    ]
+  },
+  {
+    "title": "Delivery",
+    "items": [
+      {
+        "name": "Git",
+        "icon": "Git"
+      },
+      {
+        "name": "Azure DevOps",
+        "icon": "AzureDevOps"
+      },
+      {
+        "name": "GitHub Actions",
+        "icon": "GitHubActions"
+      }
+    ]
+  },
+  {
+    "title": "Observability",
+    "items": [
+      {
+        "name": "Grafana",
+        "icon": "Grafana"
+      },
+      {
+        "name": "Elastic Stack",
+        "icon": "ElasticStack"
+      },
+      {
+        "name": "OpenTelemetry",
+        "icon": "OpenTelemetry"
+      }
+    ]
+  },
+  {
+    "title": "Editors",
+    "items": [
+      {
+        "name": "VS Code",
+        "icon": "VSCode"
+      },
+      {
+        "name": "Visual Studio",
+        "icon": "VS2022"
+      }
+    ]
+  }
+]

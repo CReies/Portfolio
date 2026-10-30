@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#282c34"/>
+<g fill="none" stroke="#1bc357" stroke-width="2" opacity=".25"><path d="M800 0L1200 300 900 630 690 360Z"/><path d="M975 0L730 200 1200 520"/><path d="M0 520L210 630M1050 0L1200 140"/><circle cx="960" cy="305" r="165"/></g>
+<rect x="65" y="75" width="66" height="6" rx="3" fill="#1bc357"/>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="65" y="150" font-size="31" font-weight="600" fill="#82f3aa">Cristian Reyes</text>
+<text x="65" y="265" font-size="64" font-weight="700" fill="#ffffff">Backend &amp;</text>
+<text x="65" y="343" font-size="64" font-weight="700" fill="#ffffff">Full-Stack Developer</text>
+<text x="65" y="420" font-size="36" fill="#82f3aa">Java, Spring &amp; Cloud</text>
+<text x="65" y="550" font-size="24" fill="#d5dce1">Reactive APIs · Data integration · Event-driven systems</text></g></svg>

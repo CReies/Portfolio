@@ -1,0 +1,8 @@
+<a
+  [href]="socialLink.link"
+  target="_blank"
+  rel="noopener noreferrer"
+  [attr.aria-label]="socialLink.name + ' (opens in a new tab)'"
+>
+  <app-svg [name]="socialLink.name" aria-hidden="true" />
+</a>

@@ -1,0 +1,72 @@
+:host {
+  display: block;
+  min-width: 0;
+  height: 100%;
+}
+.projects__card {
+  height: 100%;
+  perspective: 1200px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 0 16px #1bc3571c;
+  transition:
+    transform 180ms,
+    box-shadow 180ms;
+}
+.projects__card--featured {
+  border-top: 3px solid var(--primary-color);
+}
+.projects__card:hover,
+.projects__card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 22px #1bc35735;
+}
+.projects__card-inner {
+  display: grid;
+  min-height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 400ms ease;
+}
+.projects__card-inner--flipped {
+  transform: rotateY(180deg);
+}
+.projects__face {
+  grid-area: 1/1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  backface-visibility: hidden;
+}
+.projects__face--back {
+  transform: rotateY(180deg);
+}
+.projects__face[inert] {
+  pointer-events: none;
+}
+.projects__action {
+  width: 100%;
+  min-height: 46px;
+  margin-top: auto;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.projects__action:hover {
+  background: var(--color-scheme-2);
+}
+@media (prefers-reduced-motion: reduce) {
+  .projects__card,
+  .projects__card-inner {
+    transition: none;
+  }
+  .projects__card:hover,
+  .projects__card:focus-within {
+    transform: none;
+  }
+}

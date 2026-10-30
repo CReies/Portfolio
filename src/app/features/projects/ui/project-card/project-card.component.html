@@ -1,0 +1,44 @@
+<article
+  class="projects__card"
+  tabindex="-1"
+  [class.projects__card--featured]="projectData.featured"
+  (keydown.escape)="onEscape($event)"
+>
+  <div class="projects__card-inner" [class.projects__card-inner--flipped]="detailsOpen">
+    <div
+      class="projects__face projects__face--front"
+      [inert]="detailsOpen"
+      [attr.aria-hidden]="detailsOpen"
+    >
+      <app-project-card-front [projectCardFrontData]="projectCardFrontData" />
+      <button
+        #detailsButton
+        type="button"
+        class="projects__action"
+        [attr.aria-label]="'View details of ' + projectData.title"
+        [attr.aria-expanded]="detailsOpen"
+        [attr.aria-controls]="'project-details-' + projectData.id"
+        (click)="setDetails(true)"
+      >
+        View details
+      </button>
+    </div>
+    <div
+      class="projects__face projects__face--back"
+      [id]="'project-details-' + projectData.id"
+      [inert]="!detailsOpen"
+      [attr.aria-hidden]="!detailsOpen"
+    >
+      <app-project-card-back [projectCardBackData]="projectCardBackData" />
+      <button
+        #backButton
+        type="button"
+        class="projects__action"
+        [attr.aria-label]="'Back to ' + projectData.title"
+        (click)="setDetails(false)"
+      >
+        Back to overview
+      </button>
+    </div>
+  </div>
+</article>

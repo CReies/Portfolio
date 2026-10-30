@@ -1,11 +1,13 @@
+<a class="skip-link" href="#homeSection">Skip to content</a>
 <app-header />
 <main class="main">
-	<div class="main__inner dark">
-		<div class="main__container">
-			<app-home />
-			<app-projects />
-			<app-skills />
-		</div>
-	</div>
+  <div class="main__inner" [class.dark]="theme() === 'dark'" [class.light]="theme() === 'light'">
+    <div class="main__container">
+      <app-home />
+      <app-projects />
+      <app-experience />
+      <app-skills />
+    </div>
+  </div>
 </main>
 <app-footer />

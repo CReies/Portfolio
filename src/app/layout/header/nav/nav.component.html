@@ -1,0 +1,24 @@
+<nav aria-label="Main navigation">
+  <ul
+    class="header__navbar"
+    [class.header__navbar--disabled]="!menuOpen"
+    [inert]="mobile && !menuOpen"
+    id="headerNavbar"
+  >
+    @for (navItem of navItems; track navItem.id) {
+      <li class="header__navbar-item">
+        <a
+          [href]="navItem.link"
+          [attr.target]="navItem.blank ? '_blank' : null"
+          [attr.rel]="navItem.blank ? 'noopener noreferrer' : null"
+          [attr.aria-label]="
+            navItem.blank ? navItem.name + ' on LinkedIn (opens in a new tab)' : null
+          "
+          (click)="linkSelected.emit(navItem.link)"
+        >
+          {{ navItem.name }}
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

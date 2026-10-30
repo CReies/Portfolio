@@ -1,0 +1,52 @@
+:host {
+  display: block;
+}
+.projects {
+  margin-block: 3rem 6rem;
+}
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.25rem);
+  margin: 0 0 0.8rem;
+}
+.projects__intro {
+  max-width: 65ch;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+.projects__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.projects__cards--entered app-project-card {
+  animation: project-enter 400ms ease-out both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes project-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 1000px) {
+  .projects__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .projects__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .projects__cards--entered app-project-card {
+    animation: none;
+  }
+}

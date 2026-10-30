@@ -1,0 +1,38 @@
+<section id="experienceSection" class="experience" tabindex="-1" aria-labelledby="experienceTitle">
+  <h2 id="experienceTitle">Professional experience</h2>
+  <div class="experience__company">
+    <h3>Sofka Technologies</h3>
+    <p>Medellín, Colombia · Remote</p>
+  </div>
+  <ol class="experience__timeline">
+    @for (stage of stages; track stage.period) {
+      <li>
+        <p class="experience__date">{{ stage.period }}</p>
+        <div>
+          <h4>{{ stage.role }}</h4>
+          <p class="experience__focus">{{ stage.focus }}</p>
+          <p class="experience__description">{{ stage.description }}</p>
+        </div>
+      </li>
+    }
+  </ol>
+  <div class="experience__education">
+    <div>
+      <h3>Education</h3>
+      <p>Computer Engineering · UNIR</p>
+      <p>
+        In progress · Jan 2023 – Jun 2027
+        <br />
+        Expected graduation: June 2027
+      </p>
+    </div>
+    <div>
+      <h3>Languages</h3>
+      <p>
+        Spanish · Native
+        <br />
+        English · B2
+      </p>
+    </div>
+  </div>
+</section>

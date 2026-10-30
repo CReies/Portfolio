@@ -1,0 +1,32 @@
+[
+  {
+    "period": "Oct 2026 – Present",
+    "role": "Backend Developer",
+    "focus": "Banking backend",
+    "description": "Joining a banking backend project using Java, Spring WebFlux, event-driven architecture, RabbitMQ, and Azure."
+  },
+  {
+    "period": "Jul 2026 – Aug 2026",
+    "role": "Full-Stack Developer",
+    "focus": "Agentic development",
+    "description": "Contributed to an enterprise application with Claude Code, React, Redux, Tailwind CSS, Java, and Spring MVC. Applied Hexagonal Architecture with PostgreSQL, Kafka, Docker, and Azure; reviewed frontend, backend, security, and data implementations and validated increments before QA handoff."
+  },
+  {
+    "period": "Mar 2025 – Jun 2026",
+    "role": "Backend Developer",
+    "focus": "Reactive services & data integration",
+    "description": "Developed reactive APIs and microservices with Java, Spring WebFlux, and .NET. Built data integration with Apache NiFi, MongoDB, PostgreSQL, and SQL; worked with RabbitMQ, CQRS, API-key authentication, and caching. Used Docker and Kubernetes across Azure, AWS, and GCP, with Grafana, Elastic Stack, and OpenTelemetry."
+  },
+  {
+    "period": "Nov 2024 – Feb 2025",
+    "role": "Full-Stack Developer",
+    "focus": "Full stack & serverless",
+    "description": "Developed React and Node.js features within micro frontends and decoupled services. Worked with AWS Lambda, S3, SQS, DynamoDB, CloudFront, and CloudWatch, applying Hexagonal Architecture."
+  },
+  {
+    "period": "Feb 2024 – Jun 2024",
+    "role": "Software Development Apprentice",
+    "focus": "Hands-on full-stack training",
+    "description": "Trained with .NET, Node.js, Angular, and React; built reactive flows with Rx.NET and RxJS and real-time communication with WebSockets. Applied DDD and Hexagonal Architecture with MongoDB, SQL Server, Express, and Docker."
+  }
+]

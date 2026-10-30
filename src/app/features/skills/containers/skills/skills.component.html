@@ -1,0 +1,37 @@
+<section id="skillsSection" class="skills" tabindex="-1" aria-labelledby="skillsTitle">
+  <h2 id="skillsTitle">Skills &amp; tools</h2>
+  <p class="skills__intro">The technologies and practices behind my work.</p>
+  <div class="skills__groups">
+    @for (group of skills; track group.title) {
+      <article class="skills__category">
+        <h3>{{ group.title }}</h3>
+        <ul class="skills__cards">
+          @for (skill of group.items; track skill.name) {
+            <li><app-skill-card [skill]="skill" /></li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+  <article class="skills__architecture">
+    <h3>Architecture &amp; quality</h3>
+    <ul class="skills__tags">
+      @for (practice of architecture; track practice) {
+        <li>{{ practice }}</li>
+      }
+    </ul>
+  </article>
+  <h3 class="skills__tools-title">Tools</h3>
+  <div class="skills__groups">
+    @for (group of tools; track group.title) {
+      <article class="skills__category">
+        <h4>{{ group.title }}</h4>
+        <ul class="skills__cards">
+          @for (tool of group.items; track tool.name) {
+            <li><app-skill-card [skill]="tool" /></li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>
