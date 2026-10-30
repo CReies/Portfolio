@@ -3,4 +3,3 @@ export interface TechnologyGroup {
   readonly title: string;
   readonly items: readonly Technology[];
 }
-

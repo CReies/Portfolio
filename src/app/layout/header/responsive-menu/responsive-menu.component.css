@@ -1,9 +1,32 @@
-:host { display: none; }
-.responsive-menu {
- display: flex; align-items: center; justify-content: center; width: 44px; height: 44px;
- border: 0; border-radius: .6rem; background: transparent; cursor: pointer;
+:host {
+  display: none;
 }
-.responsive-menu:hover { background: var(--color-scheme-2); }
-.responsive-menu:focus-visible { outline: 2px solid var(--secondary-color); outline-offset: 2px; }
-::ng-deep .responsive-menu__item svg { display: block; fill: var(--color-scheme-1); width: 1.4rem; height: 1.4rem; }
-@media (max-width: 900px) { :host { display: block; } }
+.responsive-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 0.6rem;
+  background: transparent;
+  cursor: pointer;
+}
+.responsive-menu:hover {
+  background: var(--color-scheme-2);
+}
+.responsive-menu:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+::ng-deep .responsive-menu__item svg {
+  display: block;
+  fill: var(--color-scheme-1);
+  width: 1.4rem;
+  height: 1.4rem;
+}
+@media (max-width: 900px) {
+  :host {
+    display: block;
+  }
+}

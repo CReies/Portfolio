@@ -3,5 +3,5 @@ import { PROJECTS } from '../data-access/projects.data';
 
 @Injectable({ providedIn: 'root' })
 export class ProjectsFacade {
-	readonly projects = PROJECTS;
+  readonly projects = PROJECTS;
 }

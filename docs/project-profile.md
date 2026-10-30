@@ -29,12 +29,12 @@ No había lockfile versionado ni versión de Node configurada. Angular 17.3 decl
 
 ## Skills recomendadas
 
-| Capacidad del catálogo | Skill | Uso concreto |
-| --- | --- | --- |
-| frontend-angular | angular-developer | Componentes standalone, DI, signals, migraciones y pruebas compatibles con la versión instalada. |
-| library-documentation | context7-mcp | Resolver dudas de API de Angular y CLI; se consultaron las versiones 17.3 y 22 para la migración. |
-| acceptance-validation | validate-change | Validar siguientes funcionalidades contra criterios de aceptación. |
-| code-review | code-review | Revisar límites y regresiones de cambios sustanciales. |
+| Capacidad del catálogo | Skill             | Uso concreto                                                                                      |
+| ---------------------- | ----------------- | ------------------------------------------------------------------------------------------------- |
+| frontend-angular       | angular-developer | Componentes standalone, DI, signals, migraciones y pruebas compatibles con la versión instalada.  |
+| library-documentation  | context7-mcp      | Resolver dudas de API de Angular y CLI; se consultaron las versiones 17.3 y 22 para la migración. |
+| acceptance-validation  | validate-change   | Validar siguientes funcionalidades contra criterios de aceptación.                                |
+| code-review            | code-review       | Revisar límites y regresiones de cambios sustanciales.                                            |
 
 Para un rediseño posterior: `frontend-design`; para auditoría explícita de accesibilidad/UX: `web-design-guidelines`. Se usó `playwright-best-practices` para una comprobación puntual del build local en Chrome, mediante el runtime disponible, sin añadir dependencias o una suite E2E al repositorio. No se activan skills React, backend o Docker por coincidencias en datos del portfolio.
 

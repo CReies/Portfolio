@@ -28,9 +28,9 @@ La configuración esperada del repositorio en Settings → Pages es publicar des
 
 Consulta DNS pública realizada el **29 de octubre de 2026**:
 
-| Nombre | Tipo | Destino observado |
-| --- | --- | --- |
-| `cristian-reyes.dev` | A | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
-| `www.cristian-reyes.dev` | CNAME | `creies.github.io` |
+| Nombre                   | Tipo  | Destino observado                                                          |
+| ------------------------ | ----- | -------------------------------------------------------------------------- |
+| `cristian-reyes.dev`     | A     | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
+| `www.cristian-reyes.dev` | CNAME | `creies.github.io`                                                         |
 
 Coinciden con los destinos indicados por [GitHub para dominios personalizados](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). No se modificó DNS ni la configuración remota. La comprobación DNS no equivale a publicar esta versión.

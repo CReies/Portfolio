@@ -5,7 +5,8 @@ import { ExperienceFacade } from '../application/experience.facade';
   imports: [],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css',
-  changeDetection: ChangeDetectionStrategy.Eager
+  changeDetection: ChangeDetectionStrategy.Eager,
 })
-export class ExperienceComponent { readonly stages = inject(ExperienceFacade).stages; }
-
+export class ExperienceComponent {
+  readonly stages = inject(ExperienceFacade).stages;
+}

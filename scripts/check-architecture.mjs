@@ -18,12 +18,20 @@ async function inspect(directory) {
 
     const relative = path.relative(app, file).split(path.sep).join('/');
     const [layer, feature, area] = relative.split('/');
-    const source = ts.createSourceFile(file, await readFile(file, 'utf8'), ts.ScriptTarget.Latest, true);
+    const source = ts.createSourceFile(
+      file,
+      await readFile(file, 'utf8'),
+      ts.ScriptTarget.Latest,
+      true,
+    );
     function visit(node) {
       let specifier;
       if (ts.isImportDeclaration(node) || ts.isExportDeclaration(node)) {
         specifier = node.moduleSpecifier;
-      } else if (ts.isCallExpression(node) && node.expression.kind === ts.SyntaxKind.ImportKeyword) {
+      } else if (
+        ts.isCallExpression(node) &&
+        node.expression.kind === ts.SyntaxKind.ImportKeyword
+      ) {
         specifier = node.arguments[0];
       }
       if (specifier && ts.isStringLiteral(specifier) && specifier.text.startsWith('.')) {
@@ -36,8 +44,11 @@ async function inspect(directory) {
           layout: ['layout', 'core', 'shared'],
           features: ['features', 'core', 'shared'],
         };
-        if (allowed[layer] && (!allowed[layer].includes(targetLayer) ||
-            (layer === 'features' && targetLayer === 'features' && feature !== targetFeature))) {
+        if (
+          allowed[layer] &&
+          (!allowed[layer].includes(targetLayer) ||
+            (layer === 'features' && targetLayer === 'features' && feature !== targetFeature))
+        ) {
           violations.push(`${relative}: forbidden dependency on ${destination}`);
         }
         const featureAreas = {
@@ -46,8 +57,13 @@ async function inspect(directory) {
           application: ['application', 'data-access', 'models'],
           ui: ['ui', 'models'],
         };
-        if (layer === 'features' && targetLayer === 'features' && feature === targetFeature &&
-            featureAreas[area] && !featureAreas[area].includes(targetArea)) {
+        if (
+          layer === 'features' &&
+          targetLayer === 'features' &&
+          feature === targetFeature &&
+          featureAreas[area] &&
+          !featureAreas[area].includes(targetArea)
+        ) {
           violations.push(`${relative}: forbidden ${area} dependency on ${destination}`);
         }
         if (specifier.text.endsWith('.json') && !relative.split('/').includes('data-access')) {

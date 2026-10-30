@@ -8,19 +8,19 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { ExperienceComponent } from './features/experience/containers/experience.component';
 
 @Component({
-    selector: 'app-root',
-    imports: [
-        HeaderComponent,
-        HomeComponent,
-        ProjectsComponent,
-        SkillsComponent,
-        FooterComponent,
-        ExperienceComponent,
-    ],
-    templateUrl: './app.component.html',
-    changeDetection: ChangeDetectionStrategy.Eager,
-    styleUrl: './app.component.css'
+  selector: 'app-root',
+  imports: [
+    HeaderComponent,
+    HomeComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    FooterComponent,
+    ExperienceComponent,
+  ],
+  templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-	readonly theme = inject(ThemeService).theme;
+  readonly theme = inject(ThemeService).theme;
 }

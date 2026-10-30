@@ -23,4 +23,3 @@ The English CV (`Cristian_Reyes_CV_EN.tex`, supplied with the local EN/ES PDFs) 
 - Keep education in progress, expected graduation June 2027, and language levels faithful to the CV.
 
 These are repository and integration checks, not claims about search ranking, live index coverage, social crawler caches, or deployment. No publishing, Search Console submission, new SEO dependencies, or server-rendering migration is required for this change.
-

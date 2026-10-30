@@ -11,11 +11,11 @@ describe('Profile content', () => {
     expect(page.querySelector('a[href="#projectsSection"]')).not.toBeNull();
     expect(page.querySelector('a[href="mailto:ccreyesmolina@gmail.com"]')).not.toBeNull();
     const downloads = page.querySelectorAll<HTMLAnchorElement>('a[download]');
-    expect(Array.from(downloads, a => a.getAttribute('href'))).toEqual([
-      'assets/documents/Cristian_Reyes_CV_EN.pdf', 'assets/documents/Cristian_Reyes_CV_ES.pdf'
+    expect(Array.from(downloads, (a) => a.getAttribute('href'))).toEqual([
+      'assets/documents/Cristian_Reyes_CV_EN.pdf',
+      'assets/documents/Cristian_Reyes_CV_ES.pdf',
     ]);
     expect(page.textContent).not.toContain('Vue');
     expect(page.textContent).not.toContain('MySQL');
   });
 });
-

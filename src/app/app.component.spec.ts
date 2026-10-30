@@ -10,8 +10,13 @@ describe('Portfolio composition', () => {
     body.classList.add('dark');
   });
   function render() {
-    spyOn(window, 'matchMedia').and.callFake(query => ({matches: query.includes('max-width'), media:query} as MediaQueryList));
-    TestBed.configureTestingModule({ imports:[AppComponent], providers:[provideHttpClient(), provideHttpClientTesting()] });
+    spyOn(window, 'matchMedia').and.callFake(
+      (query) => ({ matches: query.includes('max-width'), media: query }) as MediaQueryList,
+    );
+    TestBed.configureTestingModule({
+      imports: [AppComponent],
+      providers: [provideHttpClient(), provideHttpClientTesting()],
+    });
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     return fixture;
@@ -19,7 +24,8 @@ describe('Portfolio composition', () => {
   it('composes the sections with a single main and profile heading', () => {
     const fixture = render();
     const page: HTMLElement = fixture.nativeElement;
-    for (const id of ['homeSection','projectsSection','experienceSection','skillsSection']) expect(page.querySelector('#'+id)).not.toBeNull();
+    for (const id of ['homeSection', 'projectsSection', 'experienceSection', 'skillsSection'])
+      expect(page.querySelector('#' + id)).not.toBeNull();
     expect(page.querySelectorAll('h1').length).toBe(1);
     expect(page.querySelectorAll('main').length).toBe(1);
     expect(page.querySelectorAll('app-project-card').length).toBe(3);
@@ -39,7 +45,12 @@ describe('Portfolio composition', () => {
     expect(nav.inert).toBeFalse();
     theme.click();
     fixture.detectChanges();
-    for (const element of [page.querySelector('.header')!, page.querySelector('.main__inner')!, TestBed.inject(DOCUMENT).body]) expect(element.classList.contains('light')).toBeTrue();
+    for (const element of [
+      page.querySelector('.header')!,
+      page.querySelector('.main__inner')!,
+      TestBed.inject(DOCUMENT).body,
+    ])
+      expect(element.classList.contains('light')).toBeTrue();
     menu.click();
     fixture.detectChanges();
     expect(nav.inert).toBeTrue();

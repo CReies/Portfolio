@@ -6,7 +6,7 @@ import { SkillsFacade } from '../../application/skills.facade';
   imports: [SkillCardComponent],
   templateUrl: './skills.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
-  styleUrl: './skills.component.css'
+  styleUrl: './skills.component.css',
 })
 export class SkillsComponent {
   private readonly facade = inject(SkillsFacade);
@@ -14,4 +14,3 @@ export class SkillsComponent {
   readonly tools = this.facade.tools;
   readonly architecture = this.facade.architecture;
 }
-

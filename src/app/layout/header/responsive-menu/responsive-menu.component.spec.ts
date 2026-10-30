@@ -10,11 +10,13 @@ describe('ResponsiveMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [ResponsiveMenuComponent],
-    providers: [provideHttpClient(withXhr(), withInterceptorsFromDi()), provideHttpClientTesting()]
-})
-    .compileComponents();
-    
+      imports: [ResponsiveMenuComponent],
+      providers: [
+        provideHttpClient(withXhr(), withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+      ],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ResponsiveMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

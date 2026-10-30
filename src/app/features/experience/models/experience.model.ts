@@ -4,4 +4,3 @@ export interface ExperienceStage {
   readonly focus: string;
   readonly description: string;
 }
-

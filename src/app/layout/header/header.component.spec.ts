@@ -12,7 +12,9 @@ describe('Header navigation', () => {
 
   beforeEach(async () => {
     mobile = true;
-    spyOn(window, 'matchMedia').and.callFake((query) => ({ matches: mobile, media: query } as MediaQueryList));
+    spyOn(window, 'matchMedia').and.callFake(
+      (query) => ({ matches: mobile, media: query }) as MediaQueryList,
+    );
     await TestBed.configureTestingModule({
       imports: [HeaderComponent],
       providers: [provideHttpClient(), provideHttpClientTesting()],

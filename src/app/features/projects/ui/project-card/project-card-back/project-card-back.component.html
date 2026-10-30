@@ -1,20 +1,26 @@
 <div class="projects__details">
-	<h3>{{ projectCardBackData.title }}</h3>
-	<ul class="projects__capabilities">
-		@for (capability of projectCardBackData.capabilities; track $index) {
-			<li>{{ capability }}</li>
-		}
-	</ul>
-	<h4>Built with</h4>
-	<ul class="projects__technologies">
-		@for (technology of projectCardBackData.technologies; track technology.name) {
-			<li>{{ technology.name }}</li>
-		}
-	</ul>
-	<div class="projects__links">
-		@for (link of projectCardBackData.links; track link.url) {
-			<a [href]="link.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="projectCardBackData.title + ': ' + link.label + ' (opens in a new tab)'">{{ link.label }}</a>
-		}
-	</div>
+  <h3>{{ projectCardBackData.title }}</h3>
+  <ul class="projects__capabilities">
+    @for (capability of projectCardBackData.capabilities; track $index) {
+      <li>{{ capability }}</li>
+    }
+  </ul>
+  <h4>Built with</h4>
+  <ul class="projects__technologies">
+    @for (technology of projectCardBackData.technologies; track technology.name) {
+      <li>{{ technology.name }}</li>
+    }
+  </ul>
+  <div class="projects__links">
+    @for (link of projectCardBackData.links; track link.url) {
+      <a
+        [href]="link.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        [attr.aria-label]="projectCardBackData.title + ': ' + link.label + ' (opens in a new tab)'"
+      >
+        {{ link.label }}
+      </a>
+    }
+  </div>
 </div>
-

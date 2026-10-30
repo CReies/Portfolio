@@ -1,5 +1,16 @@
-<button #toggle type="button" class="responsive-menu" id="responsiveMenuOpen"
-	[attr.aria-label]="menuOpen ? 'Close navigation' : 'Open navigation'" aria-controls="headerNavbar"
-	[attr.aria-expanded]="menuOpen" (click)="menuToggle.emit()">
-	<app-svg [name]="menuOpen ? 'MenuClose' : 'MenuOpen'" class="responsive-menu__item" aria-hidden="true" />
+<button
+  #toggle
+  type="button"
+  class="responsive-menu"
+  id="responsiveMenuOpen"
+  [attr.aria-label]="menuOpen ? 'Close navigation' : 'Open navigation'"
+  aria-controls="headerNavbar"
+  [attr.aria-expanded]="menuOpen"
+  (click)="menuToggle.emit()"
+>
+  <app-svg
+    [name]="menuOpen ? 'MenuClose' : 'MenuOpen'"
+    class="responsive-menu__item"
+    aria-hidden="true"
+  />
 </button>

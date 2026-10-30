@@ -17,16 +17,16 @@ Se conservó la migración y reorganización que ya estaban en el árbol de trab
 
 Ejecutados con **Node 24.21.0**, **pnpm 9.12.2**, Angular 22.2.3 y Chrome 152 en Windows:
 
-| Comando | Resultado |
-| --- | --- |
-| `pnpm check:architecture` | Correcto |
-| `pnpm build` | Correcto; bundle inicial 327,65 kB, dentro del presupuesto |
-| `pnpm build --base-href=/Portfolio/` | Correcto |
-| `pnpm check:deployment /Portfolio/` | Correcto sobre el build de subdirectorio |
-| `pnpm check:deployment` | Correcto sobre el build final con base `/` |
-| `pnpm test:ci` | 30 pruebas Jasmine/Karma correctas |
-| `pnpm ng deploy --dry-run` | Correcto: `dist/portfolio/browser`, rama `gh-pages`, dominio `cristian-reyes.dev`; publicación omitida |
-| `git diff --check` | Correcto |
+| Comando                              | Resultado                                                                                              |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `pnpm check:architecture`            | Correcto                                                                                               |
+| `pnpm build`                         | Correcto; bundle inicial 327,65 kB, dentro del presupuesto                                             |
+| `pnpm build --base-href=/Portfolio/` | Correcto                                                                                               |
+| `pnpm check:deployment /Portfolio/`  | Correcto sobre el build de subdirectorio                                                               |
+| `pnpm check:deployment`              | Correcto sobre el build final con base `/`                                                             |
+| `pnpm test:ci`                       | 30 pruebas Jasmine/Karma correctas                                                                     |
+| `pnpm ng deploy --dry-run`           | Correcto: `dist/portfolio/browser`, rama `gh-pages`, dominio `cristian-reyes.dev`; publicación omitida |
+| `git diff --check`                   | Correcto                                                                                               |
 
 El dry-run se ejecutó sin variables de tokens en el proceso, porque el builder imprime la URL de destino. No hubo push, limpieza remota ni commit. La salida final de `dist/portfolio/browser` tiene base `/`.
 

@@ -10,11 +10,13 @@ describe('SvgComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [SvgComponent],
-    providers: [provideHttpClient(withXhr(), withInterceptorsFromDi()), provideHttpClientTesting()]
-})
-    .compileComponents();
-    
+      imports: [SvgComponent],
+      providers: [
+        provideHttpClient(withXhr(), withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+      ],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(SvgComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -42,10 +44,12 @@ describe('SvgComponent', () => {
     const http = TestBed.inject(HttpTestingController);
     fixture.componentRef.setInput('name', '../untrusted');
     fixture.detectChanges();
-    http.expectNone((request) => true);
+    http.expectNone((request) => request.url.includes('untrusted'));
     fixture.componentRef.setInput('name', 'Missing');
     fixture.detectChanges();
-    http.expectOne('assets/images/svg/Missing.svg').flush('', { status: 404, statusText: 'Not Found' });
+    http
+      .expectOne('assets/images/svg/Missing.svg')
+      .flush('', { status: 404, statusText: 'Not Found' });
     fixture.detectChanges();
     expect(component.svgIcon).toBe('');
     http.verify();

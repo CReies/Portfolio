@@ -6,4 +6,3 @@ export class SkillsFacade {
   readonly tools = TOOLS;
   readonly architecture = ARCHITECTURE;
 }
-
