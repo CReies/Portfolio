@@ -1,0 +1,12 @@
+<footer class="footer">
+	<div class="footer__container">
+		<span class="footer__copyright">&copy; {{ year }} Cristian Reyes</span>
+		<nav aria-label="Social profiles">
+			<ul class="footer__social">
+				@for (socialLink of socialLinks; track $index) {
+				<li><app-social-link [socialLink]="socialLink" /></li>
+				}
+			</ul>
+		</nav>
+	</div>
+</footer>

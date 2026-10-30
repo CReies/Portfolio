@@ -1,0 +1,15 @@
+<div class="projects__overview">
+	<p class="projects__kind">{{ projectCardFrontData.featured ? 'Featured project' : 'Full-stack project' }}</p>
+	<h3>{{ projectCardFrontData.title }}</h3>
+	<figure>
+		<img [src]="projectCardFrontData.image" [alt]="projectCardFrontData.imageAlt" width="640" height="320" loading="lazy" decoding="async" />
+		<figcaption>Architecture illustration</figcaption>
+	</figure>
+	<p class="projects__description">{{ projectCardFrontData.description }}</p>
+	<ul class="projects__stack" aria-label="Main technologies">
+		@for (technology of projectCardFrontData.technologies.slice(0, 4); track technology.name) {
+			<li>{{ technology.name }}</li>
+		}
+	</ul>
+</div>
+

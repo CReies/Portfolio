@@ -1,0 +1,10 @@
+<section #projectSection id="projectsSection" class="projects" tabindex="-1" aria-labelledby="projectsTitle">
+	<h2 id="projectsTitle">Selected projects</h2>
+	<p class="projects__intro">Public projects exploring reactive backends, domain rules, and full-stack applications.</p>
+	<div class="projects__cards" [class.projects__cards--entered]="entered()">
+		@for (project of projects; track project.id; let index = $index) {
+			<app-project-card [projectData]="project" [style.--reveal-delay]="index * 90 + 'ms'" />
+		}
+	</div>
+</section>
+

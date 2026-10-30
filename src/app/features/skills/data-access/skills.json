@@ -1,0 +1,118 @@
+[
+  {
+    "title": "Backend",
+    "items": [
+      {
+        "name": "Java",
+        "icon": "Java"
+      },
+      {
+        "name": "Spring Boot",
+        "icon": "SpringBoot"
+      },
+      {
+        "name": "Spring WebFlux / MVC",
+        "icon": "SpringBoot"
+      },
+      {
+        "name": "C#",
+        "icon": "CSharp"
+      },
+      {
+        "name": ".NET",
+        "icon": "DotNet"
+      },
+      {
+        "name": "Node.js",
+        "icon": "NodeJS"
+      },
+      {
+        "name": "Express",
+        "icon": "Express"
+      }
+    ]
+  },
+  {
+    "title": "Frontend",
+    "items": [
+      {
+        "name": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "name": "Angular",
+        "icon": "Angular"
+      },
+      {
+        "name": "React",
+        "icon": "React"
+      },
+      {
+        "name": "Redux",
+        "icon": "Redux"
+      },
+      {
+        "name": "RxJS",
+        "icon": "RxJS"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "TailwindCSS"
+      }
+    ]
+  },
+  {
+    "title": "Data & integration",
+    "items": [
+      {
+        "name": "PostgreSQL",
+        "icon": "PostgresSQL"
+      },
+      {
+        "name": "SQL Server",
+        "icon": "SQLServer"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "MongoDB"
+      },
+      {
+        "name": "RabbitMQ",
+        "icon": "RabbitMQ"
+      },
+      {
+        "name": "Kafka",
+        "icon": "Kafka"
+      },
+      {
+        "name": "Apache NiFi",
+        "icon": "ApacheNiFi"
+      }
+    ]
+  },
+  {
+    "title": "Cloud & platform",
+    "items": [
+      {
+        "name": "AWS",
+        "icon": "AWS"
+      },
+      {
+        "name": "Azure",
+        "icon": "Azure"
+      },
+      {
+        "name": "GCP",
+        "icon": "GCP"
+      },
+      {
+        "name": "Docker",
+        "icon": "Docker"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "Kubernetes"
+      }
+    ]
+  }
+]

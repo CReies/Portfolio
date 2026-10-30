@@ -1,0 +1,8 @@
+<header class="header" [class.dark]="themeService.theme() === 'dark'" [class.light]="themeService.theme() === 'light'" id="header">
+	<div class="header__container">
+		<app-title (homeSelected)="selectLink('#homeSection')" />
+		<app-responsive-menu [menuOpen]="menuOpen()" (menuToggle)="toggleMenu()" />
+		<app-nav [menuOpen]="menuOpen()" [mobile]="mobile()" (linkSelected)="selectLink($event)" />
+		<app-theme-switch [menuOpen]="menuOpen()" [theme]="themeService.theme()" (themeToggle)="themeService.toggle()" />
+	</div>
+</header>

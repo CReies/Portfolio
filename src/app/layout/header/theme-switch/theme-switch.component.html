@@ -1,0 +1,4 @@
+<button type="button" class="theme-switch" id="themeSwitchContainer"
+	[attr.aria-label]="theme === 'dark' ? 'Use light theme' : 'Use dark theme'" (click)="themeToggle.emit()">
+	<app-svg [name]="theme === 'dark' ? 'Sun' : 'Moon'" class="theme-switch__element" aria-hidden="true" />
+</button>

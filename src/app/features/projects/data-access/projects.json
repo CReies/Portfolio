@@ -1,0 +1,152 @@
+[
+  {
+    "id": 0,
+    "title": "Reto Sistema Bancario",
+    "description": "A banking backend with independent client and account microservices, deposits, withdrawals, and balance validation.",
+    "image": "assets/images/projects/banking.svg",
+    "imageAlt": "Client and account microservices linked through RabbitMQ, with separate PostgreSQL databases.",
+    "featured": true,
+    "capabilities": [
+      "Manage clients, accounts, and transactions; generate account statements by client and date range.",
+      "Validate available balances before debit operations and exchange events through RabbitMQ.",
+      "Reactive persistence with R2DBC, versioned migrations with Flyway, and automated tests."
+    ],
+    "links": [
+      {
+        "label": "Backend repository",
+        "url": "https://github.com/CReies/Reto-Sistema-Bancario"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Java 21"
+      },
+      {
+        "name": "Spring Boot"
+      },
+      {
+        "name": "WebFlux"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "R2DBC"
+      },
+      {
+        "name": "RabbitMQ"
+      },
+      {
+        "name": "Flyway"
+      },
+      {
+        "name": "Gradle"
+      },
+      {
+        "name": "JUnit"
+      },
+      {
+        "name": "Mockito"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "La Pinguinera",
+    "description": "A bookstore quotation system that applies customer and volume pricing rules, with a reactive backend and a connected frontend.",
+    "image": "assets/images/projects/pinguinera.svg",
+    "imageAlt": "Angular frontend connects to a .NET quotation domain with pricing rules and MongoDB event persistence.",
+    "featured": true,
+    "capabilities": [
+      "Calculate individual, list, budget, and group quotes with customer-seniority and quantity-based pricing rules.",
+      "Keep domain rules separate using DDD and Hexagonal Architecture, with reactive use cases and controllers.",
+      "Persist domain events in MongoDB with Event Sourcing; connect an Angular frontend using NgRx."
+    ],
+    "links": [
+      {
+        "label": "Backend repository",
+        "url": "https://github.com/CReies/La-Pinguinera-Hexagonal"
+      },
+      {
+        "label": "Frontend repository",
+        "url": "https://github.com/CReies/La-Pinguinera-Quotes-Front-Redux"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "C#"
+      },
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "MongoDB"
+      },
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "NgRx"
+      },
+      {
+        "name": "DDD"
+      },
+      {
+        "name": "Hexagonal Architecture"
+      },
+      {
+        "name": "Event Sourcing"
+      },
+      {
+        "name": "Reactive programming"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "ToDo App & API",
+    "description": "A complete task-management solution: a React interface backed by an Express API for organizing tasks and categories.",
+    "image": "assets/images/projects/todo.svg",
+    "imageAlt": "React and Redux task interface connects through an Express API to MongoDB.",
+    "featured": false,
+    "capabilities": [
+      "Create, edit, and delete tasks and categories through the frontend and REST API.",
+      "Manage client state with Redux and use TypeScript across the interface and API.",
+      "Store tasks and categories in MongoDB through Mongoose."
+    ],
+    "links": [
+      {
+        "label": "Frontend repository",
+        "url": "https://github.com/CReies/TodoList"
+      },
+      {
+        "label": "API repository",
+        "url": "https://github.com/CReies/TodoAPI"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "React"
+      },
+      {
+        "name": "Redux"
+      },
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "Express"
+      },
+      {
+        "name": "MongoDB"
+      },
+      {
+        "name": "Mongoose"
+      }
+    ]
+  }
+]
+

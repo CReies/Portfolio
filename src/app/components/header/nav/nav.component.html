@@ -1,9 +1,0 @@
-<nav>
-	<ul class="header__navbar header__navbar--disabled" id="headerNavbar">
-		@for (navItem of navItems; track navItem.id) {
-		<li class="header__navbar-item {{navItem.active ? 'header__navbar-item--active' : ''}}">
-			<a href="{{navItem.link}}" target="{{navItem.blank ? '_blank' : ''}}">{{navItem.name}}</a>
-		</li>
-		}
-	</ul>
-</nav>
